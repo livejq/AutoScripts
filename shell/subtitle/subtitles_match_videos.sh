@@ -1,10 +1,10 @@
 #!/bin/bash
 subtitle="ass"
-video="mp4"
+video="mkv"
 dir=./
 
-findsubs=$(find $dir -name "* *.$subtitle" | sort --sort=general-numeric)
-findvis=$(find $dir -name "* *.$video" | sort --sort=general-numeric)
+findsubs=$(find $dir -name "* *.$subtitle" -maxdepth 1 | sort --sort=general-numeric)
+findvis=$(find $dir -name "* *.$video" -maxdepth 1 | sort --sort=general-numeric)
 sub=$(ls -l $dir*.$subtitle | grep "^-" | wc -l)
 vi=$(ls -l $dir*.$video | grep "^-" | wc -l)
 sum=$((sub > vi ? vi : sub))
