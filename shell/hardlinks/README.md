@@ -17,9 +17,13 @@
 
 ## 用法
 
-将脚本放在服务器上的硬链目标目录下执行
+将脚本放在服务器上的任意位置下执行
 
 ``` bash
 chmod 766 ./createHardLinksForMovies.sh
 bash ./createHardLinksForMovies.sh
 ```
+
+
+
+定时脚本删除了需要交互的命令，只要修改一下相应的几个路径位置即可。
