@@ -17,7 +17,7 @@
 
 ## 用法
 
-将脚本放在服务器上的任意位置下执行
+将脚本放在服务器上的任意位置下以root身份执行
 
 ``` bash
 chmod 766 ./createHardLinksForMovies.sh
